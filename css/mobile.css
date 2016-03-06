@@ -1,0 +1,190 @@
+body {
+	/*color:#331C12; ALMOST BLACK  
+	color:#FFEDE5;  	
+	color:#f5f6d4; BODY BACKGROUND
+	color:#A7C520; Light Green Background 
+	color:#193441; */
+	line-height: 1.5em;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size:14px;
+	background: #f5f6d4;
+	width:100%; 
+	margin: auto;
+	color:#6C6E3C; /*  ALL BASE TEXT COLOR  */
+}
+
+h1, h2, h3, h4, p {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+
+/* LINK STYLES SECTIONS FOR THE WEBSITE */
+nav a  { color: #331C12; text-decoration:none;font-weight:bold;font-size: .9em; 
+border-radius: 5px;  }    /* unvisited links */
+nav a:visited { color: #331C12; }   /* visited links   */
+nav a:hover   { color: #331C12; } /* user hovers     */
+nav a:active  { color: #331C12;}   /* active links    */
+/* all body links */
+#mainContent a {  text-decoration:underline; margin: 0; padding: .5em 1em 1em 2em;}
+#mainContent a:link { color:#2c2e21;   }
+#mainContent a:visited { color:#2c2e21;   }
+#mainContent a:hover { color:#2c2e21;   }
+#mainContent a:active { color:#2c2e21;   }
+/*override the padding for the links in the aside elements */
+#mainContent aside a{ padding:0;}
+/*.anchor-links{ color:red; padding: 2em; } */
+a {
+  white-space: nowrap; 
+}
+
+header {
+    margin: 0;
+	background: #85AB18 url(../images/interfaceImages/banner-background.png) no-repeat -10px center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+header h1 {
+  font-size:2.8em; 
+  font-weight:bolder; 
+  padding:20px 20px 20px 20px; 
+  width: 350px; 
+  height: 80px;
+  color:white; 
+  line-height: 1em;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+
+nav{
+	text-align:center;
+    margin: auto;
+	background: #85AB18;
+    width: 100%;
+    overflow: hidden;
+    height: 215px;
+}
+
+nav a { 
+	color: #331C12; 
+	text-decoration:none;
+	font-weight:bold;
+	font-size: 1em; 
+	border-radius: 5px;  
+} 
+
+nav ul{
+	width:auto;
+	display:inline-block;
+	overflow: hidden;
+    margin: 0;
+	list-style:none;
+	text-align:center;
+	padding:0;	
+}
+nav ul li{	
+	display:inline-block;
+	padding: .5em ;
+	text-decoration:none;
+    width: 100%;
+    border-bottom: 1px solid black;
+}
+
+nav h2 {
+  display: none;
+}
+
+
+#mainContent{
+  margin: auto;
+  clear:both;
+  display: table;
+}
+
+aside{
+  border: solid 1px; 
+  border-radius: 1em; 
+  margin: auto; 
+  width:90%; 
+  height: 90%; 
+  display: table-footer-group; 
+}
+
+form {
+	background-color: rgba(139,146,139, 0.2);
+	border-radius: 1em;
+	margin: auto;
+	width: 95%;
+}
+
+form ul{
+  list-style-type: none;  
+  padding: 0;
+}
+
+label{
+	float: right;
+	width: 200px;
+	clear: right;
+    text-align: left;	
+}
+
+/*************************** panel styles ************/
+.tab-panels {
+	padding:10px;
+	margin:10px;
+
+}
+.tab-panels ul{
+	margin: 0;
+	padding: 0;
+}
+
+.tab-panels img {
+  padding: .5rem;
+}
+
+.tab-panels ul li{
+	list-style-type:none;
+	display:inline-block;
+	background: #abb0ab;
+	margin:0;
+	padding: 3px 10px;
+	border-radius: 10px 10px 0 0;
+	color:#331C12;
+	font-weight: 200;
+	cursor: pointer;
+}
+
+.tab-panels .tabs li.active{
+	color: #7F472E;
+	background: #d6dcd6;
+}
+
+.tab-panels ul li:hover {
+	color:fff;
+	background:#F5F6D4;
+}
+.tab-panels ul li:active{
+	color:#fff;
+	background:#ABB0AB;
+}
+
+.tab-panels .panel{
+	/*display:none;     UNCOMMENT THIS SO ONLY THE ACTIVE DIV SHOWS    */
+	background:#D6DCD6;
+	/*padding: 30px;*/
+	border-radius: 0 0 10px 10px;
+    margin: auto;
+    text-align: center;
+}
+
+.tab-panels .panel.active{
+	display:block;
+}
+
+button{ margin:5px 5px 5px 5px;}
+
+footer{	background-color:#A7C520; color:#ffffff;  text-align:center; }
